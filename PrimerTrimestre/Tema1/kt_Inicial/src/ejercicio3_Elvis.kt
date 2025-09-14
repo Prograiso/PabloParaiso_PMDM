@@ -1,22 +1,19 @@
-fun main (){
 
+
+fun main() {
     println("Introduce el precio del producto:")
-    var precio : Int? = readln().toIntOrNull()
-    var descuento = descuento(precio)
+    val precio: Int? = readln().toIntOrNull() ?: 100
+    val descuento = calcularDescuento(precio)
+    val precioBase = precio ?: 100
+    val precioFinal = precioBase - descuento
 
-    println("El precio base es:${precio}")
-    println("El descuento es de: ${descuento}")
-    println("El precio final es:~${precio * descuento /100}")
-
+    println("El precio base es: $precioBase")
+    println("El descuento aplicado es: $descuento")
+    println("El precio final es: $precioFinal")
 }
 
-fun descuento (a:Int?) : Int {
-    var precio: Int? = a
-    var descuento = 0
-
-    if(precio ==null  ?:100) //si precio es nulo le asigno 100
-
-    else if (precio!!.compareTo(50)>0) 10 else 5 //si precio es mayor que 50 le aplico 10% de descuento sino 5%
-
-        return descuento
+fun calcularDescuento(precio: Int?): Double {
+    val precioBase = precio ?: 100
+    val porcentaje = if (precioBase > 50) 10 else 5
+    return precioBase * porcentaje / 100.0
 }
