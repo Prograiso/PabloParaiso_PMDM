@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2305bf4c-f46e-429d-a070-739aa23dda6c" name="Changes" comment="" />
+    <list default="true" id="2305bf4c-f46e-429d-a070-739aa23dda6c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ConcesionarioHerencia/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConcesionarioHerencia/src/controler/Concesionario.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConcesionarioHerencia/src/model/Coche.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConcesionarioHerencia/src/model/Moto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConcesionarioHerencia/src/model/Vehiculo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicios_tema1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicios_tema1/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicios_tema1/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicios_tema1/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicios_tema1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicios_tema1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicios_tema1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicios_tema1/Ejercicios_tema1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicios_tema1/src/ejercicio1_variables.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicios_tema1/src/ejercicio2_nullables.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicios_tema1/src/ejercicio3_Elvis.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicios_tema1/src/ejercicios_SentenciasControl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tienda/src/Entrada.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tienda/src/model/Categoria.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tienda/src/model/Cliente.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tienda/src/model/Producto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tienda/src/model/Tienda.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kt_Inicial/src/Entrada.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../kt_Inicial/src/Entrada.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,18 +45,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Prograiso"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Prograiso&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Prograiso/PabloParaiso_PMDM.git",
-    "accountId": "2837f5e0-c2c8-4d7c-86a1-c63c7228c009"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Prograiso/PabloParaiso_PMDM.git&quot;,
+    &quot;accountId&quot;: &quot;2837f5e0-c2c8-4d7c-86a1-c63c7228c009&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -49,7 +74,8 @@
     "last_opened_file_path": "C:/Users/Pablo/Documents/GitHub/PabloParaiso_PMDM/PrimerTrimestre/Tema1/Inicial",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
