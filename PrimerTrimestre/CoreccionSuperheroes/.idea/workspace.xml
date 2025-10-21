@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2e39154e-d123-4c56-966f-4c1936ae4059" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/ShieldCorp.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Arma.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/ArmaBiologica.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/ArmaTradicional.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Humano.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Mutante.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/SuperHeroe.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pablo_Paraiso_PMDM/Pablo_Paraiso_PMDM.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pablo_Paraiso_PMDM/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pablo_Paraiso_PMDM/src/controller/SHIELD.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pablo_Paraiso_PMDM/src/model/Arma.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pablo_Paraiso_PMDM/src/model/ArmaBiologica.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pablo_Paraiso_PMDM/src/model/ArmaTradicional.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pablo_Paraiso_PMDM/src/model/Humano.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pablo_Paraiso_PMDM/src/model/Mutante.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pablo_Paraiso_PMDM/src/model/Superheroe.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/ConcesionarioHerencia/ConcesionarioHerencia.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/ConcesionarioHerencia/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/ConcesionarioHerencia/src/controler/Concesionario.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/ConcesionarioHerencia/src/model/Camion.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/ConcesionarioHerencia/src/model/Coche.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/ConcesionarioHerencia/src/model/Coleccionable.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/ConcesionarioHerencia/src/model/Moto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/ConcesionarioHerencia/src/model/Vehiculo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/Ejercicios_tema1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/Ejercicios_tema1/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/Ejercicios_tema1/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/Ejercicios_tema1/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/Ejercicios_tema1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/Ejercicios_tema1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/Ejercicios_tema1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/Ejercicios_tema1/Ejercicios_tema1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/Ejercicios_tema1/src/ejercicio1_variables.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/Ejercicios_tema1/src/ejercicio2_nullables.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/Ejercicios_tema1/src/ejercicio3_Elvis.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/Ejercicios_tema1/src/ejercicios_SentenciasControl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/Tienda/Tienda.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/Tienda/src/Entrada.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/Tienda/src/model/Categoria.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/Tienda/src/model/Cliente.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/Tienda/src/model/Producto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tema1/Tienda/src/model/Tienda.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/FastClasesKt/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/FastClasesKt/FastClasesKt.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/FastClasesKt/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/FastClasesKt/src/controller/PlataformaVideojuegos.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/FastClasesKt/src/model/Coleccionable.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/FastClasesKt/src/model/Videojuegos.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/FastClasesKt/src/model/VideojuegosAccion.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/FastClasesKt/src/model/VideojuegosEstrategia.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/FastClasesKt/src/model/VideojuegosRPG.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/simulacroVideojuegosKt/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/simulacroVideojuegosKt/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/simulacroVideojuegosKt/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/simulacroVideojuegosKt/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/simulacroVideojuegosKt/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/simulacroVideojuegosKt/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/simulacroVideojuegosKt/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/simulacroVideojuegosKt/simulacroVideojuegosKt.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/simulacroVideojuegosKt/src/controller/PlataformaVideojuegos.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/simulacroVideojuegosKt/src/main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/simulacroVideojuegosKt/src/model/Videojuegos.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/simulacroVideojuegosKt/src/model/VideojuegosAccion.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/simulacroVideojuegosKt/src/model/VideojuegosEstrategia.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Simulacros/simulacroVideojuegosKt/src/model/VideojuegosRPG.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tema1/Inicial/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tema1/Inicial/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tema1/kt_Inicial/src/Entrada.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Tema1/kt_Inicial/src/Entrada.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="33pYtUpK2TQQwG6KhNefQT5nlbx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Pablo/Documents/GitHub/PabloParaiso_PMDM/PrimerTrimestre/Pablo_Paraiso_PMDM"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2e39154e-d123-4c56-966f-4c1936ae4059" name="Changes" comment="" />
+      <created>1760015698570</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760015698570</updated>
+    </task>
+    <servers />
+  </component>
+</project>
