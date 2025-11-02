@@ -35,7 +35,7 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-    viewBinding{
+    viewBinding{   //IMPRESCINDIBLE ESTA LINEA PARA INICIALIZAR PARTE GRAFICA ActivityMainBinding
         enable= true;
     }
 }
