@@ -27,8 +27,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)     //pero no se usa para cambiar de activiti durante el funcionamiento de la app, para pasar datos entre activities usamos Intent y putextra()
 
         binding= ActivityMainBinding.inflate(layoutInflater)
-
         setContentView(binding.root)
+
         acciones()
 
     }
