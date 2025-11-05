@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">IMC</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="calculo_de_imc">CALCULO DE IMC</string>
+    <string name="introduce_tu_altura">Introduce tu altura</string>
+    <string name="introduce_tu_peso">Introduce tu peso</string>
+    <string name="calcular_imc">Calcular IMC</string>
+    <string name="estado">ESTADO</string>
+    <string name="imc">IMC</string>
+    <string name="introduce_tu_peso_en_kg">Introduce tu peso en kg</string>
+    <string name="introduce_tu_altura_en_m">Introduce tu altura en m</string>
+</resources>

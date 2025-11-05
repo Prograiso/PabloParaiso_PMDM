@@ -1,35 +1,26 @@
 package com.example.formulario
 
 import android.os.Bundle
-import android.view.View
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.example.formulario.databinding.ActivityMainBinding
-import com.google.android.material.snackbar.Snackbar
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import com.example.formulario.databinding.ActivitySecondBinding
 
+class SecondActivity : AppCompatActivity() {
 
-class SecondActivity : AppCompatActivity(), View.OnClickListener {
+    lateinit var binding : ActivitySecondBinding
+    var mailRecuperado : String? = null
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
+        binding = ActivitySecondBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-
-
-    override fun onPostCreate(savedInstanceState: Bundle?) {
-        super.onPostCreate(savedInstanceState)
-
-        acciones()
-
-
-
-    }
-
-    private fun acciones() {
+        mailRecuperado= intent.getStringExtra("correo")
+        binding.textoMail.text = mailRecuperado
 
 
     }
-
-    override fun onClick(v: View?) {
-
-    }
-
-
 }

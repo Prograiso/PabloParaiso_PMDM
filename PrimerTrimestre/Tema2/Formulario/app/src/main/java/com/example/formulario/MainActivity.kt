@@ -15,6 +15,7 @@ import androidx.core.os.bundleOf
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.formulario.databinding.ActivityMainBinding
+import com.example.formulario.model.Usuario
 import com.google.android.material.snackbar.Snackbar
 
 
@@ -39,6 +40,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val nombre = binding.editNombre.text.toString()
             val mail = binding.editMail.text.toString()
             val pass = binding.editMail.text.toString()
+            val localizacion = binding.editMap.text.toString()
+            val estudios = binding.spinnerPuesto.selectedItem.toString()
             val experiencia = binding.checkBoxExperiencia.isChecked
             lateinit var cantidadExperiencia : String
             if(experiencia){
@@ -46,24 +49,29 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     binding.radioCinco.id-> cantidadExperiencia = "menos de 5"
                     binding.radioMasCinco.id -> cantidadExperiencia = "mas de 5"
                 }
+            } else{
+                cantidadExperiencia="Sin experiencia"
             }
-            val intent: Intent = Intent(applicationContext, SecondActivity::class.java)
 
-            //deberes si no hay datos rellenos al pulsar enviar, mensaje que faltan datos, experiencia puede estar vacia
-            //si estan todos los datos bien relleno pasar a secondmain y mostrar mensaje de enhorabuena borja , pista se hace con bundle
-            if(nombre.isEmpty()||mail.isEmpty()||pass.isEmpty()||(cantidadExperiencia.isEmpty() && experiencia))
+
+
+            if(nombre.isEmpty()||mail.isEmpty()||pass.isEmpty()|| localizacion.isEmpty() ||(cantidadExperiencia.isEmpty() && experiencia))
             {
+                val intent: Intent = Intent(applicationContext, SecondActivity::class.java)
                 Snackbar.make(binding.root, "Por favor introduce datos", Snackbar.LENGTH_SHORT).show()
             }
-            else
+            if((nombre.isNotEmpty() && mail.isNotEmpty()&& pass.isNotEmpty() || localizacion.isNotEmpty() && (cantidadExperiencia.isNotEmpty() && experiencia))
+                && mail=="admin@admin.com" && pass== "admin")
+
             {
-                intent.putExtra("nombre",nombre)
-                intent.putExtra("mail",mail)
-                intent.putExtra("pass", pass)
-                intent.putExtra("experiencia", experiencia)
-                intent.putExtra("cantidadexp", cantidadExperiencia)
+                val usuario= Usuario(nombre,mail,pass,localizacion,estudios,experiencia.toString())
+                intent.putExtra("usuario",usuario)
                 startActivity(intent)
             }
+            else {
+                Snackbar.make(binding.root, "Datos Incorrectos", Snackbar.LENGTH_SHORT).show()
+            }
+
 
         }
         binding.checkBoxExperiencia.setOnCheckedChangeListener {view,state ->
@@ -71,6 +79,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             binding.radioMasCinco.isEnabled= state
             binding.grupoRadio.check(-1)//el menos 1 indica que no hay seleccion
         }
+
         binding.grupoRadio.setOnCheckedChangeListener { view, element ->
             when(element){
                 binding.radioCinco.id ->{
@@ -81,6 +90,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }
         }
+
         binding.spinnerPuesto.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
             override fun onItemSelected(
                 parent: AdapterView<*>?,

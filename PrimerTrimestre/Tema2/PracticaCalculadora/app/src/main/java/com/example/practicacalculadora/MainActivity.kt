@@ -132,7 +132,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         } else if (operacion.isEmpty()) null
     }
 
-    private fun pulsarIgual(botonpulsado: Button) {
+    private fun pulsarIgual() {
 
         operacion = binding.operacion.text.toString()
         val ultimoChar = if (operacion.isNotEmpty()) {
@@ -192,7 +192,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
 
-    private fun limpiarTodo(botonpulsado: Button) {
+    private fun limpiarTodo() {
         binding.operacion.text = ""
         binding.resultado.text = "0.0"
     }
