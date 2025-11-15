@@ -1,15 +1,9 @@
 package com.example.practicacalculadora
 
-import android.annotation.SuppressLint
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.View
 import android.widget.Button
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.viewbinding.ViewBinding
 import com.example.practicacalculadora.databinding.ActivityMainBinding
 import kotlin.math.cos
 import kotlin.math.pow
@@ -90,10 +84,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             binding.boton1.id, binding.boton2.id, binding.boton3.id,
             binding.boton4.id, binding.boton5.id, binding.boton6.id,
             binding.boton7.id, binding.boton8.id, binding.boton9.id,
-            binding.boton0.id, binding.botonPunto.id -> botonNumerico(vista as Button)
+            binding.boton0.id, -> botonNumerico(vista as Button)
+
 
             binding.botonSuma.id, binding.botonResta.id, binding.botonMulti.id,
-            binding.botonDiv.id -> botonOperacion(vista as Button)
+            binding.botonDiv.id, binding.botonPunto.id -> botonOperacion(vista as Button)
 
             binding.botonC.id -> binding.operacion.text = ""
 
@@ -116,13 +111,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.operacion.append(numero)  //append añade siempre al final
     }
 
-
     private fun botonOperacion(botonpulsado: Button) {
         var signo = botonpulsado.text
 
         if (binding.operacion.text.isNotEmpty()) {
             val ultimoChar = binding.operacion.text.last().toString()
-            if ((ultimoChar != "-" && ultimoChar != "+" && ultimoChar != "/" && ultimoChar != "*" && ultimoChar != "√")
+            if ((ultimoChar != "-" && ultimoChar != "+" && ultimoChar != "/" && ultimoChar != "*" && ultimoChar != "√" && ultimoChar != ".")
                 && (!operacion.contains("sen") &&
                         !operacion.contains("cos") &&
                         !operacion.contains("pow"))
@@ -132,7 +126,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         } else if (operacion.isEmpty()) null
     }
 
-    private fun pulsarIgual() {
+    private fun pulsarIgual(button: Button) {
 
         operacion = binding.operacion.text.toString()
         val ultimoChar = if (operacion.isNotEmpty()) {
@@ -148,18 +142,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 binding.resultado.text = base.pow(exponente).toString()
             }
         } else if (binding.operacion.text.isNotEmpty() &&
-            (ultimoChar != "-" && ultimoChar != "+" && ultimoChar != "/" && ultimoChar != "*" && ultimoChar != "√")
+            (ultimoChar != "-" && ultimoChar != "+" && ultimoChar != "/" && ultimoChar != "*" && ultimoChar != "√" && ultimoChar != ".")
         ) {
             var resultado = operar(binding.operacion.text.toString())
             binding.resultado.text = resultado.toString()
         } else if (operacion.isEmpty()) null
     }
 
-
     private fun botonCiencitico(botonpulsado: Button) {
 
         if (binding.operacion.text.isNotEmpty() &&
-            binding.operacion.text.none { it in setOf('+', '-', '*', '/', '√') } &&
+            binding.operacion.text.none { it in setOf('+', '-', '*', '/', '√', '.') } &&
             !binding.operacion.text.contains("sen") &&
             !binding.operacion.text.contains("cos") &&
             !binding.operacion.text.contains("pow")
@@ -192,7 +185,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
 
-    private fun limpiarTodo() {
+    private fun limpiarTodo(button: Button) {
         binding.operacion.text = ""
         binding.resultado.text = "0.0"
     }

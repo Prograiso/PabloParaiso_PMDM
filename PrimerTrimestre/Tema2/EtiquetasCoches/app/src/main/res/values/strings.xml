@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">EtiquetasCoches</string>
+    <string name="formulario_coches">Formulario Coches</string>
+    <string name="enviar_formulario">Enviar Formulario</string>
+    <string name="introduce_autonomia">Introduce autonomia</string>
+    <string name="ano_de_matriculacion">ano de matriculacion</string>
+    <string name="introduce_matricula">Introduce matricula</string>
+    <string name="introduce_nombre_y_apellidos">Introduce nombre y apellidos</string>
+    <string name="nombre_y_apellidos">nombre_y_apellidos</string>
+    <string name="matricula">matricula</string>
+    <string name="autonomia">Autonomia</string>
+    <string name="ano_matriculacion">ano matriculacion</string>
+    <!--    <spiner opcion1="diesel"-->
+    <!--            opcion2="gasolina"-->
+    <!--            opcion3="hibrido"-->
+    <!--            opcion4="electrico">-->
+    <!--            </spiner>-->
+</resources>

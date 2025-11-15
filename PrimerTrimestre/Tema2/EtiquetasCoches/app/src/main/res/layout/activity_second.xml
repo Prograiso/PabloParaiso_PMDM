@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_end="651dp"
+        android:orientation="horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="RESULTADO"
+        android:textColor="@color/green"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@id/textNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:id="@+id/textNombre"
+        android:hint="@string/nombre_y_apellidos"
+        app:layout_constraintTop_toBottomOf="@id/guia"
+        app:layout_constraintBottom_toTopOf="@id/textMatricula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/textMatricula"
+        android:hint="@string/matricula"
+        app:layout_constraintTop_toBottomOf="@id/textNombre"
+        app:layout_constraintEnd_toEndOf="@id/textNombre"
+        app:layout_constraintStart_toStartOf="@id/textNombre"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/textAno"
+        android:hint="@string/ano_matriculacion"
+        app:layout_constraintTop_toBottomOf="@id/textMatricula"
+        app:layout_constraintEnd_toEndOf="@id/textNombre"
+        app:layout_constraintStart_toStartOf="@id/textNombre"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/textCombustible"
+        android:hint="Combustible"
+        app:layout_constraintTop_toBottomOf="@id/textAno"
+        app:layout_constraintEnd_toEndOf="@id/textNombre"
+        app:layout_constraintStart_toStartOf="@id/textNombre"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/textautonomia"
+        android:hint="@string/autonomia"
+        app:layout_constraintTop_toBottomOf="@id/textCombustible"
+        app:layout_constraintEnd_toEndOf="@id/textNombre"
+        app:layout_constraintStart_toStartOf="@id/textNombre"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/etiqueta"
+        app:layout_constraintTop_toBottomOf="@id/textautonomia"
+        app:layout_constraintEnd_toEndOf="@id/textNombre"
+        app:layout_constraintStart_toStartOf="@id/textNombre"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

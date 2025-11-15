@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_end="651dp"
+        android:orientation="horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="@string/formulario_coches"
+        android:textColor="@color/red"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@id/editMatricula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:id="@+id/editNombre"
+        android:inputType="text"
+        android:hint="@string/introduce_nombre_y_apellidos"
+        app:layout_constraintTop_toBottomOf="@id/guia"
+        app:layout_constraintBottom_toTopOf="@id/editMatricula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/editMatricula"
+        android:hint="@string/introduce_matricula"
+        app:layout_constraintTop_toBottomOf="@id/editNombre"
+        app:layout_constraintEnd_toEndOf="@id/editNombre"
+        app:layout_constraintStart_toStartOf="@id/editNombre"
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/editAno"
+        android:hint="@string/ano_de_matriculacion"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/editMatricula"
+        app:layout_constraintEnd_toEndOf="@id/editNombre"
+        app:layout_constraintStart_toStartOf="@id/editNombre"
+        />
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/spinerCombustible"
+        app:layout_constraintTop_toBottomOf="@id/editAno"
+        app:layout_constraintEnd_toEndOf="@id/editNombre"
+        app:layout_constraintStart_toStartOf="@id/editNombre"
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/editAutonomia"
+        android:hint="@string/introduce_autonomia"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/spinerCombustible"
+        app:layout_constraintEnd_toEndOf="@id/editNombre"
+        app:layout_constraintStart_toStartOf="@id/editNombre"
+        />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/botonEnviar"
+        android:hint="@string/enviar_formulario"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/editAutonomia"
+        app:layout_constraintEnd_toEndOf="@id/editNombre"
+        app:layout_constraintStart_toStartOf="@id/editNombre"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
