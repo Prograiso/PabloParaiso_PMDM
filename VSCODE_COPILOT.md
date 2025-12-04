@@ -192,4 +192,4 @@ R: Android Studio es el más recomendado para desarrollo Android.
 
 ---
 
-**Última actualización**: Diciembre 2025
+**Última actualización**: Diciembre 2024

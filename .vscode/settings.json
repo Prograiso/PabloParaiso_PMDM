@@ -1,9 +1,12 @@
 {
   // Configuración de GitHub Copilot
   // Optimizada para gestionar el uso de consultas premium
+  // Por defecto desactivado - actívalo solo para lenguajes que necesites
   
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
+    "kotlin": true,
+    "java": true,
     "plaintext": false,
     "markdown": false,
     "yaml": false,
