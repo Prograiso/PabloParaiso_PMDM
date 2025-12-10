@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Products</string>
+    <string name="nombre_completo_del_producto">Product Name</string>
+    <string name="menu_info">show info</string>
+    <string name="menu_total">show total</string>
+    <string name="ver_carrito">show carrito</string>
+    <string name="limpiar_carrito">clear carrito</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="vaciar">vaciar</string>
+    <string name="ver_total">ver total</string>
+    <string-array name="categorias">
+        <item>Todas</item>
+        <item>tecnologia</item>
+        <item>ropa</item>
+        <item>mueble</item>
+        <item>belleza</item>
+    </string-array>
+</resources>

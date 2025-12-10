@@ -8,27 +8,30 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.concesionario.R
 import com.example.concesionario.databinding.ItemCocheBinding
 import com.example.concesionario.model.Coche
 
 //2- indico el tipado del Adapter como la clase inner
 
-class AdapterCoche (var lista : ArrayList<Coche>, var contexto : Context) : RecyclerView.Adapter<AdapterCoche.MyHolder>(){
+class AdapterCoche (var lista : ArrayList<Coche>, var contexto : Context) :
+    RecyclerView.Adapter<AdapterCoche.MyHolder>(){
 
     //1- creo la clase anidada
     inner class MyHolder(var vista: View): RecyclerView.ViewHolder(vista){
         val textoPrecio: TextView = vista.findViewById(R.id.textPrecioCoche)
         val imagenCoche: ImageView = vista.findViewById(R.id.imagenMarca)
-        val botonDetalle : Button = vista.findViewById(R.id.btndetalle)
+        val botonDetalle : Button = vista.findViewById(R.id.btndetalleCoche)
     }
 
-    //3- Implemento los metodos
+    //3- Implemento los metodos, crea el patron -> MyHolder()
     override fun onCreateViewHolder( //crea la plantilla de todas las filas
         parent: ViewGroup,
         viewType: Int
     ): MyHolder {
-        val binding =LayoutInflater.from(contexto).inflate(R.layout.item_coche, parent,false,)
+        val binding =LayoutInflater.from(contexto)
+            .inflate(R.layout.item_coche, parent,false,)
         return MyHolder(binding)
     }
 
@@ -37,9 +40,9 @@ class AdapterCoche (var lista : ArrayList<Coche>, var contexto : Context) : Recy
         position: Int
     ) {
         val coche = lista[position]
-        holder.textoPrecio
-        holder.imagenCoche
-        holder.botonDetalle
+        holder.textoPrecio.setText(coche.precio.toString())
+        Glide.with(contexto).load(coche.imagen).placeholder(R.drawable.vw).into(holder.imagenCoche)
+// pon a escuchar el btndetlle de coche una vez se ha seleccionado modelo
     }
 
     override fun getItemCount(): Int { // indica cuantos elementos se representan en la plantilla

@@ -1,6 +1,8 @@
 package com.example.concesionario.ui
 
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.concesionario.R
@@ -31,11 +33,31 @@ class SecondActivity : AppCompatActivity() {
         marca = intent.getSerializableExtra("marca") as Marca
         instancias()
         initGUI()
+        acciones()
 
         binding.textoModelos.append("${marca.nombre}")
+        }
 
+    private fun acciones(){
+
+        binding.spinnerModelo.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                val modeloSeleccionado : Modelo = parent!!.adapter.getItem(position) as Modelo
+                listaCoches= Dataset.getModelo(modeloSeleccionado);
+                adapterCoche.notifyDataSetChanged()
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+
+            }
 
         }
+    }
 
     private fun initGUI() {
         binding.spinnerModelo.adapter = adapterModelo
@@ -53,33 +75,9 @@ class SecondActivity : AppCompatActivity() {
         listaModelos = Dataset.getListaModelos(marca)
         adapterModelo = AdapterModelo(listaModelos)
 
-        listaCoches = arrayListOf(
-            Coche(
-                Marca("Ford", R.drawable.ford),
-                "Fiesta",
-                20000,
-                100,
-                R.drawable.fiesta,
-                "Este detalle es del fiesta"
-            ),
-            Coche(
-                Marca("Ford", R.drawable.ford),
-                "Focus",
-                30000,
-                180,
-                R.drawable.focus,
-                "Este detalle es del focus"
-            ),
-            Coche(
-                Marca("Ford", R.drawable.ford),
-                "Mondeo",
-                40000,
-                220,
-                R.drawable.mondeo,
-                "Este detalle es del mondeo"
-            ),
+        listaCoches =
+            Dataset.getModelo(Modelo(Marca("Ford", 1),"Fiesta"))
 
-        )
         adapterCoche = AdapterCoche(listaCoches, this)
     }
 }
