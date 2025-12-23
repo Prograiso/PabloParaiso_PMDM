@@ -1,0 +1,101 @@
+{
+  // Configuración de GitHub Copilot
+  // Optimizada para gestionar el uso de consultas premium
+  // Por defecto desactivado - actívalo solo para lenguajes que necesites
+  
+  "github.copilot.enable": {
+    "*": false,
+    "kotlin": true,
+    "java": true,
+    "plaintext": false,
+    "markdown": false,
+    "yaml": false,
+    "json": false
+  },
+  
+  // Desactivar sugerencias automáticas para ahorrar consultas
+  // Usa Alt+\ (Option+\ en Mac) para solicitar sugerencias manualmente
+  "github.copilot.inlineSuggest.enable": true,
+  "editor.inlineSuggest.enabled": true,
+  
+  // Configuración del editor para desarrollo Kotlin/Android
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  
+  // Configuración de Kotlin
+  "kotlin.compiler.jvm.target": "1.8",
+  "[kotlin]": {
+    "editor.defaultFormatter": "mathiasfrohlich.Kotlin",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+  
+  // Configuración de Java para Android
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java",
+    "editor.tabSize": 4
+  },
+  
+  // Configuración de XML para layouts Android
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml",
+    "editor.tabSize": 4
+  },
+  
+  // Configuración de archivos Gradle
+  "[gradle]": {
+    "editor.tabSize": 4
+  },
+  
+  // Java para Android
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.errors.incompleteClasspath.severity": "warning",
+  
+  // Terminal
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.osx": "bash",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  
+  // Archivos a excluir de la búsqueda
+  "files.exclude": {
+    "**/.gradle": true,
+    "**/.idea": true,
+    "**/build": true,
+    "**/.DS_Store": true
+  },
+  
+  // Configuración de búsqueda
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/build": true,
+    "**/.gradle": true
+  },
+  
+  // Autoguardado
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  
+  // Breadcrumbs
+  "breadcrumbs.enabled": true,
+  
+  // Minimap
+  "editor.minimap.enabled": true,
+  
+  // Sugerencias de código
+  "editor.suggestSelection": "first",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  
+  // Configuración de Git
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true
+}
