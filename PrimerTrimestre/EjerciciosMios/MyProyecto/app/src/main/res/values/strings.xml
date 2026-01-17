@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyProyecto</string>
+    <string-array name="categorias">
+        <item>Todas</item>
+        <item>tecnologia</item>
+        <item>ropa</item>
+        <item>mueble</item>
+        <item>belleza</item>
+    </string-array>
+</resources>

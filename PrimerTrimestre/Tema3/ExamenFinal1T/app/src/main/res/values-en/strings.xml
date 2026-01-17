@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ExamenFinal1T</string>
+    <string name="nombre_de_la_tarea">Nombre de la tarea</string>
+    <string-array name="selecciones">
+        <item>Total</item>
+        <item>tecnologia</item>
+        <item>ropa</item>
+        <item>mueble</item>
+        <item>belleza</item>
+    </string-array>
+</resources>

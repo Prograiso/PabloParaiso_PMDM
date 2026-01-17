@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ExamenFinal1T</string>
+    <string name="introduce_descripccion" translatable="false">Introduce Descripccion</string>
+    <string name="nombre_de_la_tarea">Nombre de la tarea</string>
+    <string-array name="importancias">
+        <item>Baja</item>
+        <item>Media</item>
+        <item>Alta</item>
+    </string-array>
+</resources>

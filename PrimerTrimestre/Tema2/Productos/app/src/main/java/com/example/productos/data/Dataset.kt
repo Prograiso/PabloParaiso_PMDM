@@ -277,6 +277,7 @@ class Dataset {
             listaFavoritos.remove(producto)
         }
 
+        @SuppressLint("SuspiciousIndentation")
         fun getListaCarrito() : ArrayList<Producto>{
 
             var listaCarrito = listaFavoritos
